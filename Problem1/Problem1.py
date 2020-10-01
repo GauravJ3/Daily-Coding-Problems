@@ -1,10 +1,10 @@
 # created by adanai at 2019-11-25 16:18.
-# 
+
 # Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
 
 def summa(l,k):  #definition of function
     s = set()   #creation of empty set (hash-set in java)
-    for ele in l:   #iterating through the list
+    for ele in l:   #iterating through the list using for loop
         diff = k - ele   #taking the remainder
         if diff in s:   #checking if difference is there in the set
             return True   #break out of the loop if the difference already exists in the set
